@@ -9,14 +9,16 @@ namespace MR.Tech.Storage.Src.Entities.File
         public string Path { get; set; }
         public float Size { get; set; }
 
-        public LocalFile(string path, string name, byte[] fileBytes, float size, string format, DateTime creation)
+        public LocalFile(string path, string name, byte[] fileBytes, float size, string mime, DateTime creation)
         {
             Path = path;
             Size = size;
             FileBytes = fileBytes;
             Name = name;
-            Format = format;
+            Mime = mime;
             Creation = creation;
         }
+
+
     }
 }

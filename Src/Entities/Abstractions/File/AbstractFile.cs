@@ -11,7 +11,7 @@ namespace MR.Tech.Storage.Src.Entities.Abstractions
     {
         public string Name { get; set; }
         public byte[] FileBytes { get; set; }
-        public string Format { get; set; }
+        public string Mime { get; set; }
         public DateTime Creation {  get; set; }
     }
 }

@@ -48,9 +48,11 @@
     <Compile Include="Src\Entities\File\LocalFile.cs" />
     <Compile Include="Src\Interfaces\IDirectoryService.cs" />
     <Compile Include="Src\Interfaces\IFileService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Src\Services\Abstractions\" />
+    <Compile Include="Src\Services\Abstractions\StorageAbstract.cs" />
+    <Compile Include="Src\Services\LocalStorage\Exceptions\Enums\LocalStorageExceptionEnum.cs" />
+    <Compile Include="Src\Services\LocalStorage\Exceptions\LocalStorageException.cs" />
+    <Compile Include="Src\Services\LocalStorage\LocalStorageService.cs" />
+    <Compile Include="Src\Shared\Helpers\MimeHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,26 +14,26 @@ namespace MR.Tech.Storage.Src.Interfaces
         /// <param name="format">Formato do arquivo</param>
         /// <param name="directory">Diretorio destino do arquivo</param>
         /// <returns></returns>
-        Task<T> UploadFileAsync(string fileName, byte[] fileBytes, string format, string directory);
+        Task<T> UploadAsync(string fileName, byte[] fileBytes,string directory);
 
         /// <summary>
         /// Deleta um arquivo        
         /// </summary>
         /// <param name="fileName">Nome do arquivo</param>
         /// <returns></returns>
-        Task<T> DeleteFileAsync(string fileName);
+        Task<bool> DeleteAsync(string fileName, string dir);
 
         /// <summary>
         /// Pega um arquivo pelo nome
         /// </summary>
         /// <param name="fileName">Nome do arquivador</param>
         /// <returns></returns>
-        Task<T> GetFileAsync(string fileName);
+        Task<T> GetAsync(string fileName, string dirName);
 
         /// <summary>
         /// Lista todos os arquivos
         /// </summary>
         /// <returns></returns>
-        Task<IEnumerable<T>> ListFiles(string diretoryName);
+        Task<IEnumerable<T>> ListAllAsync(string diretoryName);
     }
 }
