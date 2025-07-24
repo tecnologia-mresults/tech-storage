@@ -32,5 +32,6 @@ namespace MR.Tech.Storage.Src.Interfaces
         /// <param name="dirName">Nome do diretório</param>
         /// <returns></returns>
         Task<IEnumerable<T>> ListAsync( string dirName);
+
     }
 }

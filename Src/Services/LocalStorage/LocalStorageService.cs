@@ -1,4 +1,4 @@
-﻿using MR.Tech.Storage.Src.Entities.Archiver;
+﻿using MR.Tech.Storage.Src.Entities.Directories;
 using MR.Tech.Storage.Src.Entities.File;
 using MR.Tech.Storage.Src.Interfaces;
 using MR.Tech.Storage.Src.Services.LocalStorage.Exceptions;
